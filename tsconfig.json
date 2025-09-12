@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "downlevelIteration": false,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["node"],
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "paths": {
+      "@tonyshark/shared": ["types/compat-tonyshark-shared.d.ts"],
+      "@tonyshark/server-shared": ["types/compat-tonyshark-server-shared.d.ts"],
+      "@tonyshark/framework": ["types/compat-tonyshark-framework.d.ts"],
+      "server-worker": ["types/server-worker.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "jest.config.ts"]
+}
