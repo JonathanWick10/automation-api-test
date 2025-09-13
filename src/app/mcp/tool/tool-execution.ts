@@ -8,7 +8,7 @@ import {
 } from 'automation-shared-test'
 import { LanguageModelV2 } from '@ai-sdk/provider'
 import { type Schema as AiSchema, generateObject } from 'ai'
-import { EngineHelperResponse } from 'server-worker'
+import { EngineHelperResponse } from 'automation-server-worker-test'
 import { z, ZodRawShape } from 'zod'
 import { system } from '../../helper/system/system'
 import { getPiecePackageWithoutArchive, pieceMetadataService } from '../../pieces/piece-metadata-service'

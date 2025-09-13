@@ -3,7 +3,7 @@ import { ActionBase, PieceProperty, PiecePropertyMap, PropertyType } from 'autom
 import { UserInteractionJobType } from 'automation-server-shared-test'
 import { isNil, PiecePackage } from 'automation-shared-test'
 import { FastifyBaseLogger } from 'fastify'
-import { EngineHelperPropResult, EngineHelperResponse } from 'server-worker'
+import { EngineHelperPropResult, EngineHelperResponse } from 'automation-server-worker-test'
 import { z } from 'zod' 
 import { userInteractionWatcher } from '../../workers/user-interaction-watcher'
 import { mcpUtils } from '../mcp-utils'

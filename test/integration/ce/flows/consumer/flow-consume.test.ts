@@ -13,7 +13,7 @@ import {
     RunEnvironment,
 } from 'automation-shared-test'
 import { FastifyBaseLogger, FastifyInstance } from 'fastify'
-import { flowJobExecutor, flowWorker } from 'server-worker'
+import { flowJobExecutor, flowWorker } from 'automation-server-worker-test'
 import { accessTokenManager } from '../../../../../src/app/authentication/lib/access-token-manager'
 import { initializeDatabase } from '../../../../../src/app/database'
 import { databaseConnection } from '../../../../../src/app/database/database-connection'

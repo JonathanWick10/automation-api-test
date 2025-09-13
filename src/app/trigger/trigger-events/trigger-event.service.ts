@@ -18,7 +18,7 @@ import {
     TriggerHookType,
 } from 'automation-shared-test'
 import { FastifyBaseLogger } from 'fastify'
-import { EngineHelperResponse, EngineHelperTriggerResult } from 'server-worker'
+import { EngineHelperResponse, EngineHelperTriggerResult } from 'automation-server-worker-test'
 import { repoFactory } from '../../core/db/repo-factory'
 import { fileService } from '../../file/file.service'
 import { flowService } from '../../flows/flow/flow.service'

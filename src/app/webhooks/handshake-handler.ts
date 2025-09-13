@@ -1,7 +1,7 @@
 import { UserInteractionJobType } from 'automation-server-shared-test'
 import { EngineResponseStatus, FlowId, FlowVersion, FlowVersionId, isNil, ProjectId, TriggerHookType, TriggerPayload, WebhookHandshakeConfiguration, WebhookHandshakeStrategy } from 'automation-shared-test'
 import { FastifyBaseLogger } from 'fastify'
-import { EngineHelperResponse, EngineHelperTriggerResult } from 'server-worker'
+import { EngineHelperResponse, EngineHelperTriggerResult } from 'automation-server-worker-test'
 import { flowVersionService } from '../flows/flow-version/flow-version.service'
 import { triggerUtils } from '../trigger/trigger-source/trigger-utils'
 import { userInteractionWatcher } from '../workers/user-interaction-watcher'

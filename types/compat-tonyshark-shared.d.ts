@@ -2,10 +2,10 @@ declare module '@tonyshark/shared' {
   // Reexporta todo tu shared principal
   export * from 'automation-shared-test';
 
-  // ★ Reexporta también los schemas (valores) que server-worker usa como *value*, no solo tipos:
+  // ★ Reexporta también los schemas (valores) que automation-server-worker-test usa como *value*, no solo tipos:
   export { FlowVersion, Trigger, TriggerType, Action, ActionType } from 'automation-shared-test';
 
-  // Tipos que server-worker menciona explícitamente:
+  // Tipos que automation-server-worker-test menciona explícitamente:
   export type FlowId = import('automation-shared-test').FlowId;
   export type ProjectId = import('automation-shared-test').ProjectId;
   export type PopulatedFlow = import('automation-shared-test').PopulatedFlow;
@@ -17,7 +17,7 @@ declare module '@tonyshark/shared' {
   export interface GetFlowVersionForWorkerRequest {
     // tu forma actual:
     versionId?: string;
-    // compat con server-worker:
+    // compat con automation-server-worker-test:
     flowId?: string;
     type?: 'EXACT' | 'LATEST' | 'LOCKED';
   }

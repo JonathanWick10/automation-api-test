@@ -19,7 +19,7 @@ import {
 import {
     FastifyPluginAsyncTypebox,
 } from '@fastify/type-provider-typebox'
-import { EngineHelperPropResult, EngineHelperResponse } from 'server-worker'
+import { EngineHelperPropResult, EngineHelperResponse } from 'automation-server-worker-test'
 import { flowService } from '../flows/flow/flow.service'
 import { sampleDataService } from '../flows/step-run/sample-data.service'
 import { userInteractionWatcher } from '../workers/user-interaction-watcher'

@@ -26,7 +26,7 @@ import { FastifyBaseLogger } from 'fastify'
 import {
     EngineHelperResponse,
     EngineHelperTriggerResult,
-} from 'server-worker'
+} from 'automation-server-worker-test'
 import { appEventRoutingService } from '../../app-event-routing/app-event-routing.service'
 import { system } from '../../helper/system/system'
 import { jobQueue } from '../../workers/queue'

@@ -28,7 +28,7 @@ import {
     UserId,
 } from 'automation-shared-test'
 import { FastifyBaseLogger } from 'fastify'
-import { EngineHelperResponse, EngineHelperValidateAuthResult } from 'server-worker'
+import { EngineHelperResponse, EngineHelperValidateAuthResult } from 'automation-server-worker-test'
 import { Equal, FindOperator, FindOptionsWhere, ILike, In } from 'typeorm'
 import { repoFactory } from '../../core/db/repo-factory'
 import { APArrayContains } from '../../database/database-connection'

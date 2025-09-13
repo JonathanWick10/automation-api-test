@@ -20,7 +20,7 @@ import {
     ProjectId,
 } from 'automation-shared-test'
 import { FastifyBaseLogger } from 'fastify'
-import { EngineHelperExtractPieceInformation, EngineHelperResponse } from 'server-worker'
+import { EngineHelperExtractPieceInformation, EngineHelperResponse } from 'automation-server-worker-test'
 import { fileService } from '../../file/file.service'
 import { system } from '../../helper/system/system'
 import { userInteractionWatcher } from '../../workers/user-interaction-watcher'

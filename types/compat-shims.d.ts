@@ -1,9 +1,9 @@
-// Reexporta todo el framework hacia el nombre que espera server-worker
+// Reexporta todo el framework hacia el nombre que espera automation-server-worker-test
 declare module '@tonyshark/framework' {
   export * from 'automation-pieces-framework-test';
 }
 
-// Mapea tipos que server-worker espera desde @tonyshark/shared
+// Mapea tipos que automation-server-worker-test espera desde @tonyshark/shared
 declare module '@tonyshark/shared' {
   // Tipos “modelo” desde tu shared
   export type ProjectId = import('automation-shared-test').ProjectId;
@@ -13,7 +13,7 @@ declare module '@tonyshark/shared' {
   export type PopulatedFlow = import('automation-shared-test').PopulatedFlow;
   export type FlowId = import('automation-shared-test').FlowId;
 
-  // Tipos de “server shared” que también usa server-worker
+  // Tipos de “server shared” que también usa automation-server-worker-test
   export type PackageInfo = import('automation-server-shared-test').PackageInfo;
   export type WorkerMachineHealthcheckRequest = import('automation-server-shared-test').WorkerMachineHealthcheckRequest;
   export type WorkerMachineHealthcheckResponse = import('automation-server-shared-test').WorkerMachineHealthcheckResponse;
